@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(241, 238, 240);
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        padding: 40px;
+        height: 1100px;
+        border-radius: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+        background-color: rgb(133, 213, 229);
+    }
+    label{
+    display:block;
+    margin:4px;
+    font-weight:bold;
+    }
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=password],
+    textarea {
+        padding: 7px;
+        border: 7px solid whitesmoke;
+        border-radius: 20px;
+        width: 85%;
+        margin: bottom 10px;
+    }
+    select{
+        width: 100%px;
+        padding: 10px;
+        border: 2px solid whitesmoke;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    input[type="submit"]{
+    color:aliceblue;
+    background-color: rgb(70, 155, 13);
+    cursor:pointer;
+    }
+    img{
+        float:right;
+    }
+input[type="submit"]:hover{
+    background-color: rgb(2, 71, 31)
+} 
+.container{
+    width: 500px;
+    margin:auto;
+    height:400px;
+}
+
+</style>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <form style="text-align: center;">
+        <div class="container">
+        <label for="name">Enter Name</label>
+        <input type="text"name="name" required>
+        <label for="Phone">Enter Phone Number</label> 
+        <input type="tel" id="phone" name="phone"> 
+        <label for="Email">Enter Email</label>
+        <input type="email"email="email" required>
+        <label for="password">Create password</label>
+        <input type="password"name="password".id="password" required>
+        <label for="gender">gender</label>
+        <select id="gender">
+        <option value="male"name="male">Male</option>
+        <option value="female"name="female">Female</option>
+        <option value="others"name="others">Other</option></select>
+        <label for="zipcode">zip code</label>
+        <input type="text" name="zipo code" id="zip code" required>
+        <label for="DOB">Enter Your DOB</label>
+        <input type="date" name="DOB" id="DOB" required="">
+        <label for="week">Select Present Week:</label>
+        <input type="week" id="week" name="week">
+        <label for="appt">Select a Time:</label> 
+        <input type="time" id="time" name="time"><br><br>
+        <label for="Qualification">Select Your Qualification</label>
+        <label for="javascript"></label>Law
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="html"></label>B Tech
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="css"></label>Degree
+        <input type="radio" id="css" name="fav_language" value="CSS"><br><br>
+        <label for="vol">Select Your Percentage</label>
+        <input type="range" id="vol" name="vol" min="0" max="100"> <br><br>
+        <label for="Course">Select Your Skills</label>
+        <label for=" subject1"></label>Python
+        <input type="checkbox" id=" subject2" name=" subject1" value="Python">
+        <label for=" subject2"></label>Html
+        <input type="checkbox" id=" subject3" name=" subject2" value="Html">
+        <label for=" subject3"></label>Css
+        <input type="checkbox" id="subject1" name=" subject3" value="Css"><br><br>
+        <label for="myfile">Upload Your Project:</label>
+        <input type="file" id="myfile" name="myfile"> <br><br>
+        <label for="favcolor">Select Your Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor"> <br><br>
+        <input type="reset"> 
+        <input type="submit" value="Register"> 
+        </div>
+    </form>
+
+</body>
+</html>
+
